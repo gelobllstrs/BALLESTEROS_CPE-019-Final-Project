@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Animal or Plant Classifier", layout="centered")
+st.set_page_config(page_title="Animal or Plant Classifier Website", layout="centered")
 
 import torch
 import torch.nn as nn
@@ -10,7 +10,7 @@ from PIL import Image
 import tempfile
 import os
 
-MODEL_PATH = r"C:\Users\Angelo\Desktop\CPE 019 Final Project\best_model_classifier.pth"
+MODEL_PATH = "best_model_classifier.pth"
 CLASS_NAMES = ["animals", "plants"]
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
